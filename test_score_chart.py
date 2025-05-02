@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 df = pd.read_csv("scores.csv")
 
 # Group by breakfast
-grouped = df.groupby("Breakfast")["TestScore"].mean()
+grouped = df.groupby("Breakfast")["Score on Test"].mean()
 
 # Plot
 grouped.plot(kind="bar", color=["skyblue", "orange"])
